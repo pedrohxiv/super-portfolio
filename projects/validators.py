@@ -7,3 +7,11 @@ def validate_profile(prop):
 
     if len(prop) >= 500:
         raise ValidationError("Property is too long (max 500 characters).")
+
+
+def validate_project(prop):
+    if not prop:
+        raise ValidationError("Property cannot be empty.")
+
+    if len(prop) >= 500:
+        raise ValidationError("Property is too long (max 500 characters).")
