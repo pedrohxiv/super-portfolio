@@ -19,4 +19,15 @@
   </div>
   {% endfor %}
 </div>
+<div>
+  <h3>Certificados</h3>
+</div>
+<div>
+  {% for certificate in certificates %}
+  <div>
+    <h4>Nome: {{ certificate.name }}</h4>
+    <p>Instituição: {{ certificate.certifying_institution }}</p>
+  </div>
+  {% endfor %}
+</div>
 {% endblock %}
